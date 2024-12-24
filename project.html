@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .top {
+            position: relative;
+        }
+        .background-image {
+            height: 25vh;
+            width: 100%;
+        }
+
+        .external {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .right {
+            display: flex;
+            color: white;
+            font-size: 1rem;
+        }
+        .right ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+        }
+        .right li {
+            margin: 0 10px;
+        }
+        .right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .right a:hover,
+        .right a.active {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .projects-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #C0C0C0;
+            color: #333;
+            margin-top: -20px;
+        }
+        .project {
+            margin-top: 20px;
+            width: 50%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project-description {
+            padding: 10px;
+        }
+        .project-description p {
+            text-decoration: none;
+        }
+        .footer {
+            font-weight: bold;
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: rgb(14, 2, 25);
+        }
+        .projects-section h2,
+        .projects-section p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="rs1.jpg" class="background-image" alt="Background Image">
+            <div class="external">
+                <span class="menu-toggle">&#9776;</span>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">MyResume</a></li>
+                        <li><a href="project.html" class="active">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="projects-section">
+        <h2 style="color:rgb(2,2,52)">Projects</h2>
+        <div class="project">
+            <a href="https://github.com/Raghu131204/Disease-prediction" target="_blank">
+                <img src="project.png" alt="Project Image">
+            </a>
+            <div class="project-description">
+                <h3>Predicting Diseases with Random Forest Classifier</h3>
+                <p>This project aims to predict 42 different diseases using a Random Forest Classifier. By leveraging a variety of medical datasets, the model is trained to accurately diagnose conditions based on patient data.</p>
+                <p>Check out the repository <a href="https://github.com/Raghu131204/Disease-prediction" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <div class="footer">
+            © All Rights Reserved 2024
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .top {
+            position: relative;
+        }
+        .background-image {
+            height: 20vh;
+            width: 100%;
+        }
+
+        .external {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .right {
+            display: flex;
+            color: white;
+            font-size: 1rem;
+        }
+        .right ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+        }
+        .right li {
+            margin: 0 10px;
+        }
+        .right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .right a:hover,
+        .right a.active {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #C0C0C0;
+            color: #333;
+            margin-top: -20px;
+        }
+        .about-content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .about-photo {
+            flex: 0 0 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-photo img {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+        }
+        .about-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        .about-info h2 {
+            margin-bottom: 10px;
+        }
+        .about-info p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+        .keywords {
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+        .keywords h3 {
+            margin-bottom: 10px;
+        }
+        .keywords ul {
+            padding-left: 20px;
+        }
+        .keywords li {
+            list-style-type: square;
+            margin: 5px 0;
+        }
+        .footer {
+            color: rgb(14, 2, 25);
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .right ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: rgba(0, 0, 0, 0.8);
+            }
+            .right ul.show {
+                display: flex;
+            }
+            .right li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="background.jpg" class="background-image" alt="Background Image">
+            <div class="external">
+                <span class="menu-toggle">&#9776;</span>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="Myresume.html">MyResume</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="name">RAGHU GR</div>
+        </div>
+    </header>
+
+    <div class="about-section">
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="Myphoto.jpeg" alt="Your Photo">
+            </div>
+            <div class="about-info">
+                <h2 style="color:rgb(2, 2, 52)">About Me</h2>
+                <p>Hello! My name is Raghu GR, and I am currently in the 3rd year of BE in Computer Science and Engineering at Channabasaveshwara Institute of Technology, Gubbi, Tumkur, Karnataka.</p>
+                <p>I am very interested in Machine Learning because it involves mathematics, a subject I am passionate about. I am continually enhancing my skills in this area and am also interested in data analytics.</p>
+                <p>In my free time, I love to read, travel, and engage in outdoor activities such as hiking and cycling. I believe in maintaining a healthy work-life balance and strive to stay active and creative both professionally and personally.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="keywords">
+            <h3 style="color:rgb(2,2,52)">Keywords that define me are:</h3>
+            <ul>
+                <li>Focused</li>
+                <li>Kind</li>
+                <li>Passionate</li>
+                <li>Disciplined</li>
+            </ul>
+        </div> 
+        <div class="footer">
+            © All Rights Reserved 2024
+        </div>
+    </div>
+</body>
+</html>
